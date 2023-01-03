@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title> <h1 id="title"> </h1>  </title>  
+      
+      
+</head>
+      
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="description text-center">
+                This is a survey form built form as certification project for Responsive web design by freeCodeCamp.org .
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" placeholder="Enter your full name" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label">Email</label>
+                <input id="email" type="email" placeholder="Enter your email(eg.abc123@gmail.com)" class="form-control" required/>
+            </div>
+
+            
+            <div class="form-group">    
+                <label id="number-label">Age <span class="clue">(optional)</span></label>
+                <input id="number" type="number" min="13" max="120" placeholder="Enter your age" class="form-control" />
+            </div>
+            
+            <div class="form-group">    
+                <p>What is level of your profession?</p>
+                <select id="dropdown" class="form-control" required>
+                    <option disabled selected value> Select one level</option>
+                    <option value="student"> Student</option>
+                    <option value="teacher"> Teacher</option>
+                    <option value="intern"> Intern</option>
+                    <option value="PreferNo"> Prefer not to say</option>
+                    <option value="other"> Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How has your experience been till now?</p>
+                <label><input type="radio" name="user-experience"  value="great" class="input-radio"/ checked>Great</label>
+                <label><input type="radio" name="user-experience"  value="good" class="input-radio"/> Good</label>
+                <label><input type="radio" name="user-experience"  value="bad" class="input-radio"/> Bad</label>
+                <label><input type="radio" name="user-experience"  value="awful" class="input-radio"/> Awful</label>
+                <label><input type="radio" name="user-experience"  value="not-sure" class="input-radio"/> Not sure</label>  
+            </div>
+
+            <div class="form-group">
+                <p>What are you intrested in? <span class="clue">(Check multiple if you are intrested in them)</span></p>
+                <label><input class="input-checkbox" name="interented" value="front-end" type="checkbox"/> Front-end Development</label>
+                <label><input class="input-checkbox" name="interented" value="back-end" type="checkbox"/> Back-end Development</label>
+                <label><input class="input-checkbox" name="interented" value="apis" type="checkbox"/>APIs</label>
+                <label><input class="input-checkbox" name="interented" value="network-security" type="checkbox"/> Network Security</label>
+                <label><input class="input-checkbox" name="interented" value="relational-database" type="checkbox"/> Relational Database</label>
+                <label><input class="input-checkbox" name="interented" value="quality-assurance" type="checkbox"/> Quality Assurance</label>
+                <label><input class="input-checkbox" name="interented" value="data-analysis" type="checkbox"/> Data Analysis</label>
+                <label><input class="input-checkbox" name="interented" value="machine-learning" type="checkbox"/> Machine learning</label>
+            </div>
+            <div class=""form-group>
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-comment" name="comment" placeholder="Enter your comment or suggestion here..."></textarea>
+            </div>
+            <div class=""form-group>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </from>
+    
+</body>
+    
+</html>
